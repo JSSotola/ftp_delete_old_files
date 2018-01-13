@@ -60,7 +60,7 @@ def delete_old_files(ftp, files, size_to_delete, count_to_delete):
     file_keys.sort(key=lambda x: x.split("/")[1])
     deleted_size, deleted_n = 0, 0
     print("Oldest file is", file_keys[0], "and newest file is", file_keys[-1], ".")
-    while deleted_size <= size_to_delete or deleted_n <= count_to_delete:
+    while deleted_size < size_to_delete or deleted_n < count_to_delete:
         file_to_delete = file_keys[0]
         deleted_size += files.pop(file_to_delete)
         file_keys.pop(0)
@@ -73,7 +73,7 @@ def delete_old_files(ftp, files, size_to_delete, count_to_delete):
 def delete_old_in_dir(ftp, files, directory, count_to_delete):
     files.sort()
     deleted_n = 0
-    while deleted_n <= count_to_delete:
+    while deleted_n < count_to_delete:
         file_to_delete = files[0]
         files.pop(0)
         if ARMED:
