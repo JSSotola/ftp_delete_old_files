@@ -13,6 +13,7 @@ RUN_ONLY_ONCE = True
 ARMED = True
 VERBOSE = False
 
+
 with open("secrets", "r") as f:
     secrets = f.read()
 
