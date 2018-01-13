@@ -8,7 +8,7 @@ MAX_SIZE = 5  # GB
 MAX_FILE_COUNT = 5000
 MAX_DIR_COUNT = 1000
 KEEP_RESERVE = 0.1  # keeps free space
-CHECK_EVERY = 3  # hours
+CHECK_EVERY = 2  # hours
 RUN_ONLY_ONCE = True
 ARMED = True
 VERBOSE = False
@@ -32,26 +32,30 @@ def get_all_files(ftp):
     for directory in directories:
         dates_dict = defaultdict(int)
         files = []
+        files_names = []
         s = 0
-        c = 0
+
         ftp.cwd("/")
         try:
             ftp.cwd(directory)
         except error_perm:
             continue
+
         ftp.dir(files.append)
-        files_names = []
+
         for file in files:
             file = file.split()
             size = int(file[4])
             s += size
-            c += 1
             dates_dict[file[-1][:8]] += 1
             file_list[directory + "/" + file[-1]] = size
             files_names += [file[-1]]
+
         dict_directories[directory] = files_names
-        print(directory, c, "files,", to_MB(s), "MB", end="     ")
+
+        print(directory, len(files), "files,", to_MB(s), "MB", end="     ")
         print("Data from:", str(dates_dict)[27:-1])
+
     return file_list, dict_directories
 
 
