@@ -3,9 +3,10 @@ from time import sleep
 import socket
 from collections import defaultdict
 
+
 MAX_SIZE = 5  # GB
 MAX_FILE_COUNT = 5000
-MAX_DIR_COUNT = 1500
+MAX_DIR_COUNT = 1000
 KEEP_RESERVE = 0.1  # keeps free space
 CHECK_EVERY = 3  # hours
 RUN_ONLY_ONCE = True
