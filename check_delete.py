@@ -114,7 +114,7 @@ def ftp_check_size():
             else:
                 print("Size is fine.")
 
-    except ConnectionAbortedError as e:
+    except (ConnectionAbortedError, error_perm) as e:
         print(e)
         print("Connection aborted. Restarting...")
         ftp_check_size()
