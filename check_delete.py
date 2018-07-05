@@ -88,6 +88,7 @@ def delete_old_in_dir(ftp, files, directory, count_to_delete):
 
 
 def ftp_check_size():
+    global run_counter
     run_counter +=1
     try:
         with FTP_TLS(host=host, user=user, passwd=passwd) as ftp:
