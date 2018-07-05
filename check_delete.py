@@ -13,7 +13,6 @@ RUN_ONLY_ONCE = True
 ARMED = True
 VERBOSE = False
 
-run_counter = 0
 
 with open("secrets", "r") as f:
     secrets = f.read()
@@ -87,8 +86,7 @@ def delete_old_in_dir(ftp, files, directory, count_to_delete):
     return deleted_n
 
 
-def ftp_check_size():
-    global run_counter
+def ftp_check_size(run_counter=0):
     run_counter +=1
     try:
         with FTP_TLS(host=host, user=user, passwd=passwd) as ftp:
@@ -117,17 +115,17 @@ def ftp_check_size():
             else:
                 print("Size is fine.")
 
+
     except (ConnectionAbortedError, error_perm) as e:
         print(e)
         print("Connection aborted. Restarting...")
         if run_counter < 100:
-            ftp_check_size()
+            ftp_check_size(run_counter=run_counter)
 
 
     except socket.gaierror as e:
         print(e)
         print("Connection failed.")
-    run_counter = 0
 
 while __name__ == "__main__":
     ftp_check_size()
