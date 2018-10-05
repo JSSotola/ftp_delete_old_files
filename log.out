@@ -1,0 +1,66 @@
+Connected. Looking for files.
+Connected. Looking for files.
+Connected. Looking for files.
+kamera1_nadchlivem1000 files 205.2 MB
+kamera2_zahrada436 files 71.7 MB
+kamera3_covka1000 files 208.0 MB
+kamera4_vjezd1000 files 119.8 MB
+kamera5_dvur0 files 0.0 MB
+Connected. Looking for files.
+kamera1_nadchlivem1000 files 205.2 MB
+Data from: {'20180916': 172, '20180917': 67, '20180918': 18, '20180919': 3, '20180920': 35, '20180921': 52, '20180922': 25, '20180923': 89, '20180924': 10, '20180925': 4, '20180926': 58, '20180927': 30, '20180928': 235, '20180929': 112, '20180930': 25, '20181001': 3, '20181002': 4, '20181003': 13, '20181004': 30, '20181005': 15}
+kamera2_zahrada437 files 71.8 MB
+Data from: {'20180915': 2, '20180916': 56, '20180917': 16, '20180918': 19, '20180919': 7, '20180920': 10, '20180921': 51, '20180922': 10, '20180923': 176, '20180924': 5, '20180925': 1, '20180926': 8, '20180927': 6, '20180928': 16, '20180929': 11, '20180930': 5, '20181001': 12, '20181002': 4, '20181003': 5, '20181004': 4, '20181005': 13}
+kamera3_covka1000 files 208.0 MB
+Data from: {'20181003': 197, '20181004': 195, '20181005': 608}
+kamera4_vjezd1000 files 119.8 MB
+Data from: {'20181004': 530, '20181005': 470}
+kamera5_dvur0 files 0.0 MB
+Data from: {}
+
+Checking file counts in directories.
+kamera1_nadchlivem has 1000 files.
+
+kamera2_zahrada has 437 files.
+
+kamera3_covka has 1000 files.
+
+kamera4_vjezd has 1000 files.
+
+kamera5_dvur has 0 files.
+
+
+Checking total size and count.
+In total 3437 files 604.8MB.
+Size is fine.
+
+Finished.
+2018-10-05 20:18:13,429 - MyLogger - INFO - Connected. Looking for files.
+2018-10-05 20:18:14,079 - MyLogger - INFO - kamera1_nadchlivem1000 files 205.2 MB
+2018-10-05 20:18:14,081 - MyLogger - INFO - Data from: {'20180916': 172, '20180917': 67, '20180918': 18, '20180919': 3, '20180920': 35, '20180921': 52, '20180922': 25, '20180923': 89, '20180924': 10, '20180925': 4, '20180926': 58, '20180927': 30, '20180928': 235, '20180929': 112, '20180930': 25, '20181001': 3, '20181002': 4, '20181003': 13, '20181004': 30, '20181005': 15}
+2018-10-05 20:18:14,417 - MyLogger - INFO - kamera2_zahrada437 files 71.8 MB
+2018-10-05 20:18:14,418 - MyLogger - INFO - Data from: {'20180915': 2, '20180916': 56, '20180917': 16, '20180918': 19, '20180919': 7, '20180920': 10, '20180921': 51, '20180922': 10, '20180923': 176, '20180924': 5, '20180925': 1, '20180926': 8, '20180927': 6, '20180928': 16, '20180929': 11, '20180930': 5, '20181001': 12, '20181002': 4, '20181003': 5, '20181004': 4, '20181005': 13}
+2018-10-05 20:18:14,913 - MyLogger - INFO - kamera3_covka1000 files 208.0 MB
+2018-10-05 20:18:14,914 - MyLogger - INFO - Data from: {'20181003': 197, '20181004': 195, '20181005': 608}
+2018-10-05 20:18:15,373 - MyLogger - INFO - kamera4_vjezd1000 files 119.8 MB
+2018-10-05 20:18:15,374 - MyLogger - INFO - Data from: {'20181004': 530, '20181005': 470}
+2018-10-05 20:18:15,523 - MyLogger - INFO - kamera5_dvur0 files 0.0 MB
+2018-10-05 20:18:15,524 - MyLogger - INFO - Data from: {}
+2018-10-05 20:18:15,525 - MyLogger - INFO - 
+Checking file counts in directories.
+2018-10-05 20:18:15,526 - MyLogger - INFO - kamera1_nadchlivem has 1000 files.
+2018-10-05 20:18:15,526 - MyLogger - INFO - 
+2018-10-05 20:18:15,527 - MyLogger - INFO - kamera2_zahrada has 437 files.
+2018-10-05 20:18:15,528 - MyLogger - INFO - 
+2018-10-05 20:18:15,528 - MyLogger - INFO - kamera3_covka has 1000 files.
+2018-10-05 20:18:15,529 - MyLogger - INFO - 
+2018-10-05 20:18:15,530 - MyLogger - INFO - kamera4_vjezd has 1000 files.
+2018-10-05 20:18:15,530 - MyLogger - INFO - 
+2018-10-05 20:18:15,531 - MyLogger - INFO - kamera5_dvur has 0 files.
+2018-10-05 20:18:15,532 - MyLogger - INFO - 
+2018-10-05 20:18:15,532 - MyLogger - INFO - 
+Checking total size and count.
+2018-10-05 20:18:15,533 - MyLogger - INFO - In total 3437 files 604.8MB.
+2018-10-05 20:18:15,534 - MyLogger - INFO - Size is fine.
+2018-10-05 20:18:15,556 - MyLogger - INFO - 
+Finished.
