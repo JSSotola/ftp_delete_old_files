@@ -20,7 +20,7 @@ LOG_FILENAME = "log.out"
 
 
 def set_up_logging():
-
+    global my_logger
     # Set up a specific logger with our desired output level
     my_logger = logging.getLogger("Krizenec_delete_old")
     my_logger.setLevel(logging.DEBUG)
